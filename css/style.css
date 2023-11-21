@@ -1,7 +1,78 @@
-
+:root {
+  --bg-color: #1E3C72;
+  --text-color: #F5F5F5;
+  --btn-color: #f02943;
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+  height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+#container {
+  width: clamp(500px,45%, 60%);
+  padding: 40px;
+  border-radius: 24px;
+  background: var(--bg-color);
+  box-shadow:  10px 10px 20px #19315d,
+             -10px -10px 20px #234787;
+  display: grid;
+  gap: 25px;
+
+}
+
+#container h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+#container #password {
+  min-height: 4.5rem;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-break: break-all;
+  width: 100%;
+  padding: 15px;
+  border-radius: 9px;
+  box-shadow: inset 17px 17px 34px #1b3565,
+            inset -17px -17px 34px #21437f;
+}
+
+#container #slider_container {
+  display: grid;
+  grid-template-columns: 1fr 15fr 1fr;
+  gap: 10px;
+}
+
+#container #slider_container #quantity {
+  
+}
+
+#container #checkbox_group {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#container button {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-color);
+  background-color: var(--btn-color);
+  padding: 15px 30px;
+  border: none;
+  border-radius: 9px;
 }

@@ -4,12 +4,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Password Generator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/index.js"></script>
+  <script src="js/index.js" defer></script>
 </head>
 <body>
   <div id="container">
+    <h1>Password Generator</h1>
+
+    <div id="password"></div>
+
+    <div id="slider_container">
+      <label for="quantity">Length</label>
+      <input type="range" title="length" name="quantity" id="quantity" min="6" max="30" value="8">
+      <span id="quantity_display"></span>
+    </div>
     
+    <div id="checkbox_group">
+      <div>
+        <input type="checkbox" class="options" name="uppercase" id="uppercase">
+        <label for="uppercase"> Uppercase</label>
+      </div>
+
+      <div>
+        <input type="checkbox" class="options" name="lowercase" id="lowercase" checked>
+        <label for="lowercase"> Lowercase</label>
+      </div>
+
+      <div>
+        <input type="checkbox" class="options" name="numbers" id="numbers" checked>
+        <label for="numbers"> Numbers</label>
+      </div>
+
+      <div>
+        <input type="checkbox" class="options" name="symbols" id="symbols">
+        <label for="symbols"> Symbols</label>
+      </div>
+    </div>
+
+    <Button>Generate</Button>
   </div>
 </body>
 </html>
