@@ -13,6 +13,7 @@
 body {
   font-family: 'Mulish', sans-serif;
   height: 100svh;
+  padding: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,6 +39,13 @@ body {
   text-align: center;
 }
 
+#container #display_password{
+  border-radius: 9px;
+  display: flex;
+  box-shadow: inset 17px 17px 34px #1b3565,
+            inset -17px -17px 34px #21437f;
+}
+
 #container #password {
   min-height: 4.5rem;
   font-size: 1.5rem;
@@ -47,9 +55,7 @@ body {
   word-break: break-all;
   width: 100%;
   padding: 15px;
-  border-radius: 9px;
-  box-shadow: inset 17px 17px 34px #1b3565,
-            inset -17px -17px 34px #21437f;
+  
 }
 
 #container #slider_container {
@@ -58,9 +64,9 @@ body {
   gap: 10px;
 }
 
-#container #slider_container #quantity {
+/* #container #slider_container #quantity {
   
-}
+} */
 
 #container #checkbox_group {
   display: flex;
@@ -75,4 +81,16 @@ body {
   padding: 15px 30px;
   border: none;
   border-radius: 9px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#container #copy {
+  padding: 15px;
+  padding-left: 0;
+  background-color: transparent;
+}
+
+#container button:hover {
+  background-color: hsl(from var(--btn-color) h s l / 0.9);
 }
