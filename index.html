@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Generate ramdom passwords for a more secure life.">
   <title>Password Generator</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://kit.fontawesome.com/323c990d78.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/323c990d78.js" crossorigin="anonymous" defer></script>
   <script src="js/index.js" defer></script>
 </head>
 <body>
@@ -17,7 +18,7 @@
 
     <div id="display_password">
       <div id="password"></div>
-      <button id="copy"><i class="fa-regular fa-copy" style="color: #ffffff;"></i></button>
+      <button name="copy" title="copy" aria-label="copy" id="copy"><i class="fa-regular fa-copy" style="color: #ffffff;"></i></button>
     </div>
 
     <div id="slider_container">
@@ -48,7 +49,7 @@
       </div>
     </div>
 
-    <Button id="generate-btn">Generate</Button>
+    <Button name="generate" title="generate password" aria-label="generate" id="generate-btn">Generate</Button>
   </div>
 </body>
 </html>
