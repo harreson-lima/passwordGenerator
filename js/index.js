@@ -43,9 +43,34 @@ function generatePassword() {
 }
 
 async function copyPassword() {
+  if (passwordField.innerHTML === "") {
+    Toastify({
+      text: "Generate a password!",
+      duration: 3000,
+      close: true,
+      gravity: "top",
+      position: "right",
+      stopOnFocus: true,
+      style: {
+        background: "linear-gradient(to right, #fff, #fff)",
+        color: "#1e232c",
+      },
+    }).showToast();
+    return;
+  }
   if (navigator.clipboard) {
     await navigator.clipboard.writeText(passwordField.innerHTML);
-
-    alert("Password Copied!");
+    Toastify({
+      text: "Password Copied!",
+      duration: 3000,
+      close: true,
+      gravity: "top",
+      position: "right",
+      stopOnFocus: true,
+      style: {
+        background: "linear-gradient(to right, #6be247, #6be247)",
+        color: "#1e232c",
+      },
+    }).showToast();
   }
 }
