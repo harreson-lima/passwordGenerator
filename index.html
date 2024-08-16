@@ -15,18 +15,18 @@
   <script src="js/index.js" defer></script>
 </head>
 <body>
-  <div id="container">
+  <div class="container">
     <h1>Password Generator</h1>
 
-    <div id="display_password">
-      <div id="password"></div>
-      <button name="copy" title="copy" aria-label="copy" id="copy"><i class="fa-regular fa-copy" style="color: #ffffff;"></i></button>
+    <div class="display_password">
+      <div class="password"></div>
+      <button name="copy" title="copy" aria-label="copy" class="copy"><i class="fa-regular fa-copy"></i></button>
     </div>
 
-    <div id="slider_container">
+    <div class="slider_container">
       <label for="quantity">Length</label>
-      <input type="range" title="length" name="quantity" id="quantity" min="6" max="30" value="8">
-      <span id="quantity_display"></span>
+      <input type="range" title="length" name="quantity" class="quantity" id="quantity" min="6" max="30" value="8">
+      <span class="quantity_display"></span>
     </div>
     
     <div class="checkbox_group">
@@ -49,7 +49,7 @@
       </div>
     </div>
 
-    <Button name="generate" title="generate password" aria-label="generate" id="generate-btn">Generate</Button>
+    <Button name="generate" title="generate password" aria-label="generate" class="generate-btn">Generate</Button>
   </div>
 </body>
 </html>
